@@ -8,7 +8,7 @@ const expressHandlerbars = require('express-handlebars');
 
 app.use(express.static(__dirname + '/html'));
 // app.use(express.static(path.join(__dirname + '../public')));
-app.engine('hbs', expressHandlerbars.engine({
+app.engine('hbs', expressHandlerbars({
     layoutsDir: __dirname + '/views/layouts',
     defaultLayout: 'layout',
     extname: 'hbs'
