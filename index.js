@@ -22,6 +22,7 @@ app.get('/', (req, res) => {
 
 
 app.use('/task1', require('./routes/task1Route.js'))
+app.use('/task3', require('./routes/task3Route.js'))
 
 
 app.listen(port, () => {
